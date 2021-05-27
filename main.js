@@ -36,6 +36,8 @@ const state = {
     guess: 0,
 };
 const canvas = document.querySelector('#environment');
+canvas.width = document.body.clientWidth;
+canvas.height = document.body.clientHeight;
 const ctx = canvas.getContext('2d');
 canvas.addEventListener('mousedown', function (e) {
     ctx.beginPath();
